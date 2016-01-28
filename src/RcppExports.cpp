@@ -5,13 +5,12 @@
 
 using namespace Rcpp;
 
-// rcpp_hello
-List rcpp_hello();
-RcppExport SEXP TensorFlow_rcpp_hello() {
+// tfInit
+void tfInit();
+RcppExport SEXP TensorFlow_tfInit() {
 BEGIN_RCPP
-    Rcpp::RObject __result;
     Rcpp::RNGScope __rngScope;
-    __result = Rcpp::wrap(rcpp_hello());
-    return __result;
+    tfInit();
+    return R_NilValue;
 END_RCPP
 }
