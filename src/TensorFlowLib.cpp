@@ -116,6 +116,25 @@ bool TensorFlowLib::load(std::string* pError)
    // lookup symbols
    LOAD_TENSOR_FLOW_SYMBOL(NewStatus);
    LOAD_TENSOR_FLOW_SYMBOL(DeleteStatus);
+   LOAD_TENSOR_FLOW_SYMBOL(SetStatus);
+   LOAD_TENSOR_FLOW_SYMBOL(GetCode);
+   LOAD_TENSOR_FLOW_SYMBOL(Message);
+   LOAD_TENSOR_FLOW_SYMBOL(NewTensor);
+   LOAD_TENSOR_FLOW_SYMBOL(DeleteTensor);
+   LOAD_TENSOR_FLOW_SYMBOL(TensorType);
+   LOAD_TENSOR_FLOW_SYMBOL(NumDims);
+   LOAD_TENSOR_FLOW_SYMBOL(Dim);
+   LOAD_TENSOR_FLOW_SYMBOL(TensorByteSize);
+   LOAD_TENSOR_FLOW_SYMBOL(TensorData);
+   LOAD_TENSOR_FLOW_SYMBOL(NewSessionOptions);
+   LOAD_TENSOR_FLOW_SYMBOL(SetTarget);
+   LOAD_TENSOR_FLOW_SYMBOL(SetConfig);
+   LOAD_TENSOR_FLOW_SYMBOL(DeleteSessionOptions);
+   LOAD_TENSOR_FLOW_SYMBOL(NewSession);
+   LOAD_TENSOR_FLOW_SYMBOL(CloseSession);
+   LOAD_TENSOR_FLOW_SYMBOL(DeleteSession);
+   LOAD_TENSOR_FLOW_SYMBOL(ExtendGraph);
+   LOAD_TENSOR_FLOW_SYMBOL(Run);
 
    return true;
 }
